@@ -1,4 +1,4 @@
-# BCA-3rd-java2-inheritence
+# BCA-3rd-java-inheritence
 
 2021-jun-13 BCA 3rd java
 Topic covered : 
