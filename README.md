@@ -1,6 +1,7 @@
 # BCA-3rd-java-inheritence
 
-2021-jun-13 BCA 3rd java
+2021-jun-13 BCA 3rd 
+
 Topic covered : 
 * Using extends keyword
 * Types of inheritence in java
