@@ -1,3 +1,7 @@
+package models;
+
+import callback.SalaryChangeListener;
+
 public class Employee extends  Person{
     double salary;
     String companyName;
@@ -13,14 +17,26 @@ public class Employee extends  Person{
     }
 
 
-    public void setValues() {
-        super.setValues();
-        this.salary = this.salary * 3;
+    public void changeSalary(int salary, SalaryChangeListener listener) {
+
+        this.salary += salary;
+        if(salary > 0){
+            // notify salary increased
+            if (listener != null){
+                listener.onSalaryChanged("You salary is increased by " + salary);
+            }
+        }else{
+            if (listener != null){
+                listener.onSalaryChanged("You salary is decreased by " + salary);
+            }
+            // notify salary decreased
+        }
+        //
     }
 
     @Override
     public String toString() {
-        return "Employee{" +
+        return "models.Employee{" +
                 "salary=" + salary +
                 ", companyName='" + companyName + '\'' +
                 ", position='" + position + '\'' +

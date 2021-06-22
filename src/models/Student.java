@@ -1,9 +1,10 @@
+package models;
+
 public class Student extends Person { //student is a person
 
     String collegeName;
     String faculty;
     String joined;
-
     public Student(){
         this.id = 1;
         this.name ="name";
@@ -14,17 +15,17 @@ public class Student extends Person { //student is a person
         this.collegeName = "KCMIT";
         this.faculty = "Mangement";
         this.joined = "2012";
-        System.out.println("Student constructor");
+        System.out.println("models.Student constructor");
     }
 
     public void display(){
-        super.display();
+      //  super.display();
         System.out.println("This is display method from student");
     }
 
 
     public String toString() {
-        return "Student {" +
+        return "models.Student {" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", gender='" + gender + '\'' +

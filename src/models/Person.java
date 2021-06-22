@@ -1,3 +1,5 @@
+package models;
+
 public class Person {
     int id;
     String name;
@@ -5,7 +7,7 @@ public class Person {
     int age;
 
     public Person() {
-        System.out.println("Person constructor");
+        System.out.println("models.Person constructor");
     }
 
     public Person(int id, String name, String gender, int age) {
@@ -13,9 +15,15 @@ public class Person {
         this.name = name;
         this.gender = gender;
         this.age = age;
-        System.out.println("Person constructor");
+        System.out.println("models.Person constructor");
     }
+
     public void display(){
+        System.out.println("This is display method from person");
+
+    }
+
+    public void display(String a){
         System.out.println("This is display method from person");
     }
     public void setValues(){
