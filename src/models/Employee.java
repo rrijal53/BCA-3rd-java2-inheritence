@@ -2,6 +2,8 @@ package models;
 
 import callback.SalaryChangeListener;
 
+import java.util.Objects;
+
 public class Employee extends  Person{
     double salary;
     String companyName;
@@ -45,5 +47,15 @@ public class Employee extends  Person{
                 ", gender='" + gender + '\'' +
                 ", age=" + age +
                 '}';
+    }
+
+
+    public boolean equals(Object o) {
+            return ((Employee)o).companyName.equals(this.companyName);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(salary, companyName, position);
     }
 }

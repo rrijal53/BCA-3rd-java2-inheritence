@@ -1,5 +1,7 @@
 package models;
 
+import java.util.Objects;
+
 public class Student extends Person { //student is a person
 
     String collegeName;
@@ -18,21 +20,36 @@ public class Student extends Person { //student is a person
         System.out.println("models.Student constructor");
     }
 
+    public Student( String name, int age, String collegeName) {
+        super.name = name;
+        super.age = age;
+        this.collegeName = collegeName;
+    }
+
     public void display(){
       //  super.display();
         System.out.println("This is display method from student");
     }
 
+    public String getCollegeName() {
+        return collegeName;
+    }
+
+    public void setCollegeName(String collegeName) {
+        this.collegeName = collegeName;
+    }
+
+    public String getFaculty() {
+        return faculty;
+    }
+
+    public void setFaculty(String faculty) {
+        this.faculty = faculty;
+    }
 
     public String toString() {
-        return "models.Student {" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", gender='" + gender + '\'' +
-                ", age=" + age +
-                ", collegeName='" + collegeName + '\'' +
-                ", faculty='" + faculty + '\'' +
-                ", joined='" + joined + '\'' +
-                '}';
+        return this.name + " " + this.age;
     }
+
+
 }
