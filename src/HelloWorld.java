@@ -51,6 +51,8 @@ public class HelloWorld extends JFrame implements ActionListener {
        // getContentPane().setBackground(Color.BLUE);
         add(tabbedPane);
 //        bg.add(rbGender);
+
+
 //        bg.add(rbFGender);
 
 //        add(jlName);
@@ -60,6 +62,8 @@ public class HelloWorld extends JFrame implements ActionListener {
 //        add(jlGender);
 //        add(rbGender);
 //        add(rbFGender);
+
+
 
 //        setSize(300, 300);
         setBounds(100, 100 , 500 ,500);
