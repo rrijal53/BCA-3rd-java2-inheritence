@@ -21,6 +21,7 @@ public class Calculator extends JFrame implements ActionListener, KeyListener, I
         comboBox = new JComboBox<>(new String[]{"Nepal" ,"US", "India", "China"});
         comboBox.addItemListener(this);
 
+
         jtf = new JTextField(20);
         jtf.addKeyListener(new KeyAdapter(){
             public void keyTyped(KeyEvent e) {
