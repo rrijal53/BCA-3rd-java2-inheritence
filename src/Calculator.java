@@ -15,18 +15,22 @@ public class Calculator extends JFrame implements ActionListener, KeyListener, I
         String selected = (String)comboBox.getSelectedItem();
         jLabelDisplay.setText(selected);
     }
+
+
     Calculator(){
-        comboBox = new JComboBox<>(new String[]{"Nepal" , "India", "China"});
-//        comboBox.addItemListener(this);
+        comboBox = new JComboBox<>(new String[]{"Nepal" ,"US", "India", "China"});
+        comboBox.addItemListener(this);
+
         jtf = new JTextField(20);
         jtf.addKeyListener(new KeyAdapter(){
             public void keyTyped(KeyEvent e) {
-                //dsds
+                jLabelDisplay.setText(e.getKeyChar() +"");
             }
         });
+        add(jtf);
         jLabelDisplay =  new JLabel();
         comboBox.addActionListener(this);
-        addMouseListener(this);
+       // addMouseListener(this);
         add(comboBox);
         add(jLabelDisplay);
         setSize(500,500);

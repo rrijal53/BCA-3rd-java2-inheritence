@@ -1,0 +1,7 @@
+{
+  "name": "roshan",
+  "email": "rii@ac.com",
+  "isActive": true,
+  "age": 12,
+  "interests": ["a", "b", "c"]
+}
